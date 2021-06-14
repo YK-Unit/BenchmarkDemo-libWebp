@@ -1,5 +1,5 @@
 PODS:
-  - Benchmark-ShiftOperator-Case (0.1.0)
+  - BenchmarkCase_BuiltInOperators (0.1.0)
   - libwebp (1.2.0):
     - libwebp/demux (= 1.2.0)
     - libwebp/mux (= 1.2.0)
@@ -15,7 +15,7 @@ PODS:
     - YYImage/Core
 
 DEPENDENCIES:
-  - Benchmark-ShiftOperator-Case (from `./Benchmark-ShiftOperator-Case`)
+  - BenchmarkCase_BuiltInOperators (from `./BenchmarkCase_BuiltInOperators`)
   - libwebp (= 1.2.0)
   - YYImage/libwebp (from `https://github.com/ibireme/YYImage.git`, branch `master`)
 
@@ -24,8 +24,8 @@ SPEC REPOS:
     - libwebp
 
 EXTERNAL SOURCES:
-  Benchmark-ShiftOperator-Case:
-    :path: "./Benchmark-ShiftOperator-Case"
+  BenchmarkCase_BuiltInOperators:
+    :path: "./BenchmarkCase_BuiltInOperators"
   YYImage:
     :branch: master
     :git: https://github.com/ibireme/YYImage.git
@@ -36,10 +36,10 @@ CHECKOUT OPTIONS:
     :git: https://github.com/ibireme/YYImage.git
 
 SPEC CHECKSUMS:
-  Benchmark-ShiftOperator-Case: b06ef5f7c6eccdc7fcdc6983cab2e010b17aa715
+  BenchmarkCase_BuiltInOperators: b7fb2844a272832aeb70ca34ce433a0c72cd902e
   libwebp: e90b9c01d99205d03b6bb8f2c8c415e5a4ef66f0
   YYImage: 6db68da66f20d9f169ceb94dfb9947c3867b9665
 
-PODFILE CHECKSUM: f05b5d6c0a01cadc7664de99041b64b4506de1a6
+PODFILE CHECKSUM: 7146e1063a7ea01ee0ff87e7a103605d2084136b
 
 COCOAPODS: 1.10.1

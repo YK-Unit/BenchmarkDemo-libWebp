@@ -8,7 +8,7 @@
 #import "ViewController.h"
 #import "YYImageCoder.h"
 #import "UIImage+YYForceDecode.h"
-#import "BenchmarkShiftOperatorCase.h"
+#import "BenchmarkCase_BuiltInOperators.h"
 
 @interface ViewController ()
 
@@ -24,11 +24,11 @@
     // Do any additional setup after loading the view.
     self.webpImageNameArray = @[
         @"test_1",
-        @"test_2",
-        @"test_3",
-        @"test_4",
-        @"test_5",
-        @"test_6",
+//        @"test_2",
+//        @"test_3",
+//        @"test_4",
+//        @"test_5",
+//        @"test_6",
     ];
 }
 
@@ -54,13 +54,24 @@
 - (IBAction)doNumberOfShiftOperatorsCalculate:(id)sender
 {
     NSLog(@"=== 大量左右位移计算耗时（10w次） ===");
-    [BenchmarkShiftOperatorCase testShiftOperatorsCalculate: 100000];
+    NSInteger numbers = 100000;
+    [BenchmarkCase_BuiltInOperators testShiftOperatorCalculate: numbers];
+
+    [BenchmarkCase_BuiltInOperators testPlusOperatorCalculate: numbers];
+
+    [BenchmarkCase_BuiltInOperators testMultiplyOperatorCalculate: numbers];
 }
 
 - (IBAction)doLittleOfShiftOperatorsCalculate:(id)sender
 {
     NSLog(@"=== 小量左右位移计算耗时（100次） ===");
-    [BenchmarkShiftOperatorCase testShiftOperatorsCalculate: 100];
+    NSInteger numbers = 100;
+    
+    [BenchmarkCase_BuiltInOperators testShiftOperatorCalculate: numbers];
+
+    [BenchmarkCase_BuiltInOperators testPlusOperatorCalculate: numbers];
+
+    [BenchmarkCase_BuiltInOperators testMultiplyOperatorCalculate: numbers];
 }
 
 @end
